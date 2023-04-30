@@ -53,6 +53,7 @@
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
+
                 </ul>
                 <span class="navbar-text text-muted">
                     Let's shout together "PlayBall!!!"
@@ -60,7 +61,6 @@
             </div>
         </div>
     </nav>
-
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -75,6 +75,7 @@
     </div>
 
     <main class="flex-shrink-0 main-bg">
+
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}

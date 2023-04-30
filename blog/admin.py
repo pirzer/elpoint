@@ -3,7 +3,7 @@ from .models import Post, Comment, Choice, Poll, Vote
 from django_summernote.admin import SummernoteModelAdmin
 
 
-# Choice, Poll, and Vote are part of Poll option
+# Choice, Poll, and Vote were added in line 2
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
@@ -25,7 +25,7 @@ class CommentAdmin(admin.ModelAdmin):
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
 
-# Choice, Poll, and Vote are part of Poll option
+# Choice, Poll, and Vote were added below
 
 
 @admin.register(Choice)
