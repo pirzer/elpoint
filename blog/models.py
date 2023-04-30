@@ -4,7 +4,6 @@ from cloudinary.models import CloudinaryField
 from django.utils import timezone
 
 
-
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
@@ -52,7 +51,7 @@ class Comment(models.Model):
 # Beginning of Polls setion below.
 
 class Choice(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=80)
 
     def __str__(self):
         return self.name
@@ -67,6 +66,7 @@ class Poll(models.Model):
     def __str__(self):
         return self.name
 
+
 class Vote(models.Model):
     poll = models.ForeignKey(
         Poll, on_delete=models.SET_NULL, related_name="votes", null=True, blank=True)
@@ -78,4 +78,3 @@ class Vote(models.Model):
         return f"{self.poll.name} - {self.choice.name}"
 
 # Ending of Polls setion below.
-
