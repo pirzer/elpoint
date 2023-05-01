@@ -6,6 +6,7 @@
 <head>
     <title>Elpoint Blog</title>
 
+    <meta charset="utf-8"> <!-- added - Poll -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
@@ -46,7 +47,7 @@
                     {% if user.is_authenticated %}
         <!-- Polls option in the main heading -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Polls</a>
+                        <a class="nav-link" href="{% url 'PollApp:home' %}">Polls</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
