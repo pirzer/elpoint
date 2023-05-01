@@ -38,9 +38,10 @@ ALLOWED_HOSTS = ['elpoint.herokuapp.com', 'localhost']
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 
-# Application definition
+# Application definition. Added line 44 polls
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
