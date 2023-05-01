@@ -29,7 +29,7 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <div id="piechart"></div>
 <script type="text/javascript">
-  var poll_results = "{{poll_results|safe}}";
+  var poll_results = {{poll_results|safe}};
 
   // Load google charts
   google.charts.load('current', { 'packages': ['corechart'] });

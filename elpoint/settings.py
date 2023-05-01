@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # To change Debug from True to False before heroku deployment
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['elpoint.herokuapp.com', 'localhost']
 
@@ -41,7 +41,6 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 # Application definition. Added line 44 polls
 
 INSTALLED_APPS = [
-    # 'PollApp.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
