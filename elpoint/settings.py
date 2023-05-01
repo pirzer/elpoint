@@ -41,7 +41,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 # Application definition. Added line 44 polls
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
+    # 'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
