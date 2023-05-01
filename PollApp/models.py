@@ -23,9 +23,9 @@ class Poll(models.Model):
 
 class Vote(models.Model):
     poll = models.ForeignKey(
-        Poll, on_delete=models.SET_NULL, related_name="votes", null=True, blank=True)
+        Poll, on_delete=models.SET_NULL, related_name="votes", null=True, blank=False)
     choice = models.ForeignKey(
-        Choice, on_delete=models.SET_NULL, related_name="votes", null=True, blank=True)
+        Choice, on_delete=models.SET_NULL, related_name="votes", null=True, blank=False)
     timestamp = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
